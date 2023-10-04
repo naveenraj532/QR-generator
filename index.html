@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator & Decoder</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="homepage">
+        <h1 align="center">QR Code Manager</h1>
+        <div class="options">
+            <button id="generateButton" onclick="showGenerateSection()">Generate QR Code</button>
+            <button id="decodeButton" onclick="showDecodeSection()">Decode QR Code</button>
+        </div>
+    </div>
+
+    <div class="generate-section" style="display: none;">
+        <h2>Generate QR Code</h2>
+        <div class="contents">
+            <input type="text" placeholder="Text or URL" id="qrTxt">
+            <button onclick="generateQr()">Generate QR</button>
+            <div id="imgbox">
+                <img src="" id="qrimg">
+                <a href="#" id="downloadLink" download="qr-code.png" style="display: none;">Download QR Code</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="decode-section" style="display: none;">
+        <h2>Decode QR Code</h2>
+        <div class="contents">
+            <input type="file" accept="image/*" id="uploadInput">
+            <button onclick="decodeQr()">Decode QR</button>
+            <div id="decodedResult" style="display: none;">
+                <p>Decoded Result:</p>
+                <span id="decodedLink"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsqr@1.0.1/dist/jsQR.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
