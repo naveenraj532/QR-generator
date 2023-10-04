@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.homepage {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.generate-section, .decode-section {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+}
+
+.contents {
+    text-align: center;
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#downloadLink {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+#decodedResult {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#decodedLink {
+    font-weight: bold;
+    font-size: 18px;
+    color: #007BFF;
+}
+
+@media (max-width: 768px) {
+    button {
+        font-size: 16px;
+    }
+}
